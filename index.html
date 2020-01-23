@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar-wrapper">
+      <div class="left">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="file:///C:/Users/caesa/Downloads/Official-Resume-Caesar-Feng.pdf">Resume</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="#">Projects</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="brand">
+          Caesar Feng
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="intro">Welcome to my webpage, my name is Caesar
+        and I am currently an undergraduate student at the University of 
+        Waterloo studying Computer Science and Finance
+      </div>
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images2/books.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle"></div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images2/code.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">welcome to my interests</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images2/building.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">welcome to my skills and knowledge</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images2/galaxy.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="subtitle">welcome to this random text</div>
+          </div>
+        </div>
+
+      </div>
+    </div>       
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+ 
+
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    });
+  });
+
+</script>
+
+</html>

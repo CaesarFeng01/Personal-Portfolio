@@ -1,0 +1,193 @@
+
+/* master styles */
+body {
+    font-family: "Teko", "Franklin Gothic Medium", "sans serif";
+    margin: 0px; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* nav styles */
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.left{
+    display:flex;
+    background-color:teal;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.navbar-wrapper > .left > div {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;    
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 1s;
+}
+
+.nav-link-wrapper a{
+    color:white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-link-wrapper a:hover {
+    color:coral;
+}
+
+
+/* intro styles */
+.intro{
+    color:white;
+    padding:40px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    text-align: center;
+    font-size:40px;
+}
+
+
+
+
+/* portfolio styles */
+
+.portfolio-items-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%; 
+}
+
+.img-text-wrapper {
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+   
+}
+
+.img-text-wrapper .body-text{
+    font-size: 30px;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .body-text{
+    font-size: 30px;
+    color: white;
+}
+
+
+.img-text-wrapper .subtitle{
+    text-transform: uppercase;
+    padding-bottom:40px;
+    font-size: 40px;
+    transition: 0.5s;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-size:40px;
+    color:teal;
+}
+
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(20%);
+}
+
+
+/* About Styles */
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color:teal;
+}
+
+
+/* Contact Info Styles */
+.title{
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    color:white;
+	font-size:20px;
+	line-height:1.6em;
+    padding-left:10px;
+  
+}
+
+.main li{
+    padding:10px;
+    font-size:20px;
+}
+
+/* redundant but keep for reference */
+.two-column-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-image-wrapper{
+    padding-top:30px;
+    padding-right: 50px;
+    width:80%;
+}
+
+.contact-info-wrapper{
+    padding:30px;
+    font-size: 20px;
+}
+
+
+
+.contact a:hover{
+    border-bottom: 1px solid black;
+    color:coral;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.contact a{
+    transition: border-bottom 1s;
+    text-decoration: none;
+    color:black;
+    border-bottom: 1px solid transparent;
+}
